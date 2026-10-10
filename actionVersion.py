@@ -219,7 +219,6 @@ def main():
                 return False
             punchData = GetPunchData(username, os.environ['punch_location'], os.environ['tencentKey'], dataJson)
             Punch(headers, punchData, username, id, signId)
-            return True
         if os.environ['blue_sign'] == 'yes':
             doBluePunch(headers, username)
 
